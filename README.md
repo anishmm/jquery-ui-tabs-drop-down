@@ -21,3 +21,8 @@ Usage
 *       maxTab: 4                       // max tab
 *  		});
 *
+
+
+Demo
+
+<a href="http://jsfiddle.net/anishmm/T3PvS/3/embedded/result/">http://jsfiddle.net/anishmm/T3PvS/3/embedded/result/</a>
