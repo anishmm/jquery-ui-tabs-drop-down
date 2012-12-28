@@ -3,10 +3,9 @@ jquery-ui-tabs-drop-down
 
 jquery ui tabs - drop down
 
-|Description|
-'tabDropdown' extends jQuery UI tabs to include a dropdown for when tabs break to the maxTab count
+Description ->  'tabDropdown' extends jQuery UI tabs to include a dropdown for when tabs break to the maxTab count
 
-|Usage|
+Usage
 
 * Simple:
 *   	$("#mytab").tabDropdown();
