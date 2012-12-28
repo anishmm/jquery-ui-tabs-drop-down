@@ -1,0 +1,274 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/anishmm/jquery-ui-tabs-drop-down/master/jquery.tabDropdown.min.js"></script>
+   
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/base/jquery-ui.css"
+        rel="stylesheet" id="jqStyle" />
+    <script type="text/javascript">
+        $(function () {
+            $("#tabs").tabDropdown({
+                className: "tDropdown",
+                Active: true,
+                dropDownText: "More",
+                showCount: true,
+                dropIcon: "&#9660; ",
+                dropWidth: "36%",
+                maxTab: 3
+
+            });
+
+            $("#tabs2").tabs()
+
+        });
+    
+    </script>
+    <style type="text/css">
+        #demo
+        {
+            padding: 20px;
+        }
+        .myWrapper
+        {
+            float: left;
+        }
+        #Download
+        {
+            display: block;
+            clear: both;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        
+        #tabs, #tabs2
+        {
+            width: 450px;
+            position: relative;
+            float: left;
+        }
+        #tabs2
+        {
+            margin-right: 30px;
+        }
+        
+        .tDropdown
+        {
+            display: none;
+            position: absolute;
+            background: #e6e6e6;
+            right: 13px;
+            border: 1px solid lightgrey;
+        }
+        .tDropdown a
+        {
+            display: block;
+            padding: 10px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .tDropdown a:hover
+        {
+            background: #ffffff;
+        }
+        .tDropdown .highlight
+        {
+            font-weight: bold;
+        }
+        h3
+        {
+            font-weight: bold;
+            font-size: 18px;
+            clear: both;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <a id="Download" href="https://github.com/anishmm/jquery-ui-tabs-drop-down">Download
+        </a>
+        <div class="myWrapper">
+            <h3>
+                Normal Jquery UI Tab
+            </h3>
+            <div id="tabs2">
+                <ul>
+                    <li><a href="#tabs-1">Tab 1</a></li>
+                    <li><a href="#tabs-2">Tab 2</a></li>
+                    <li><a href="#tabs-3">Tab 3</a></li>
+                    <li><a href="#tabs-4">Tab 4</a></li>
+                    <li><a href="#tabs-5">Tab 5</a></li>
+                    <li><a href="#tabs-6">Tab 6</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor varius purus
+                        in imperdiet. Pellentesque sollicitudin libero ac ante condimentum fringilla. Praesent
+                        vitae felis enim, eu viverra mauris. Pellentesque vitae libero vel enim imperdiet
+                        ullamcorper non quis lorem. Etiam risus urna, iaculis nec cursus sit amet, rutrum
+                        nec sapien. Suspendisse potenti. Aliquam sit amet arcu mi. Etiam vehicula facilisis
+                        quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        Curae; Nulla at nisi tortor, et luctus est. Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Nullam malesuada rhoncus lacus ac
+                        imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>
+                        Morbi viverra, dui ac varius ultrices, odio nisi fermentum neque, a bibendum nibh
+                        massa at augue. Vestibulum ac eros metus. Nam elit neque, tristique eget pellentesque
+                        vitae, suscipit cursus lacus. Vestibulum libero nibh, dignissim id placerat at,
+                        rhoncus vel arcu. Nullam ipsum neque, consequat non commodo vitae, venenatis ac
+                        ante. Vestibulum at tincidunt augue. Fusce pellentesque consectetur dapibus. Pellentesque
+                        aliquet vehicula aliquet. Cras dictum feugiat cursus. Nulla convallis gravida ipsum
+                        et commodo. Morbi tincidunt aliquet convallis. Vestibulum fermentum interdum neque
+                        fringilla dignissim. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>
+                        In pellentesque elementum arcu, eu viverra est sollicitudin quis. Cras dolor turpis,
+                        interdum ut vulputate et, euismod a sapien. Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Nunc suscipit pellentesque lacus
+                        nec malesuada. Proin commodo lectus tincidunt quam adipiscing consequat euismod
+                        vel massa. Aenean sed dui eget felis lacinia ornare non in quam. Vivamus condimentum
+                        condimentum mauris, ut fermentum elit lacinia at.
+                    </p>
+                </div>
+                <div id="tabs-4">
+                    <p>
+                        Nullam id risus tellus, non imperdiet eros. Integer dolor ante, facilisis ac posuere
+                        ac, auctor at leo. Aenean aliquet sem in purus placerat aliquam. Suspendisse vitae
+                        ligula et ante cursus aliquet sit amet vitae lacus. Vivamus tristique lacinia ornare.
+                        Nunc scelerisque varius justo, vel euismod felis volutpat placerat. Fusce feugiat
+                        ipsum sed lorem rhoncus venenatis. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Curabitur et ornare mi. Suspendisse odio
+                        ante, sollicitudin in porta fermentum, bibendum et nulla. Etiam vitae quam nec magna
+                        molestie iaculis. Etiam sed est lacus, vel interdum est. Pellentesque vel sem orci.
+                        Vestibulum nec ante a lacus interdum scelerisque non id nunc. Aenean molestie semper
+                        varius.
+                    </p>
+                </div>
+                <div id="tabs-5">
+                    <p>
+                        Morbi ligula augue, ultricies eu vulputate cursus, elementum ornare mauris. Nulla
+                        dui sem, condimentum sed luctus vitae, porta et ligula. Fusce bibendum, massa ac
+                        aliquam tincidunt, arcu neque lacinia nisi, at porttitor dui mi sed tortor. Ut lorem
+                        neque, molestie id eleifend ut, iaculis et ipsum. Curabitur ultricies facilisis
+                        nisl, luctus vulputate nisl lobortis vitae. Integer mi odio, mollis ut iaculis bibendum,
+                        cursus at velit. Sed vestibulum, dolor sed posuere tempor, lectus ipsum tincidunt
+                        dui, sit amet laoreet sapien ligula quis erat. Phasellus sodales sapien sit amet
+                        velit vehicula tristique. Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Pellentesque nisl sem, porta sed fringilla eget,
+                        mollis quis nunc. Etiam faucibus tempus pharetra.
+                    </p>
+                </div>
+                <div id="tabs-6">
+                    <p>
+                        Aliquam lobortis congue hendrerit. Vivamus diam nibh, imperdiet sed tempus eu, feugiat
+                        a urna. Suspendisse ut odio at sem auctor suscipit. Morbi eget velit nisl, cursus
+                        viverra mi. In et nisi eu magna consectetur placerat non in lorem. Ut sollicitudin
+                        dui quis nibh congue nec aliquam magna suscipit. Curabitur tellus augue, commodo
+                        non scelerisque nec, placerat vel ligula. Praesent bibendum purus quis magna vestibulum
+                        venenatis tincidunt velit gravida.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="myWrapper">
+            <h3>
+                Jquery UI Tab dropDown
+            </h3>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tab-1">Tab 1</a></li>
+                    <li><a href="#tab-2">Tab 2</a></li>
+                    <li><a href="#tab-3">Tab 3</a></li>
+                    <li><a href="#tab-4">Tab 4</a></li>
+                    <li><a href="#tab-5">Tab 5</a></li>
+                    <li><a href="#tab-6">Tab 6</a></li>
+                </ul>
+                <div id="tab-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor varius purus
+                        in imperdiet. Pellentesque sollicitudin libero ac ante condimentum fringilla. Praesent
+                        vitae felis enim, eu viverra mauris. Pellentesque vitae libero vel enim imperdiet
+                        ullamcorper non quis lorem. Etiam risus urna, iaculis nec cursus sit amet, rutrum
+                        nec sapien. Suspendisse potenti. Aliquam sit amet arcu mi. Etiam vehicula facilisis
+                        quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        Curae; Nulla at nisi tortor, et luctus est. Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Nullam malesuada rhoncus lacus ac
+                        imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus.</p>
+                </div>
+                <div id="tab-2">
+                    <p>
+                        Morbi viverra, dui ac varius ultrices, odio nisi fermentum neque, a bibendum nibh
+                        massa at augue. Vestibulum ac eros metus. Nam elit neque, tristique eget pellentesque
+                        vitae, suscipit cursus lacus. Vestibulum libero nibh, dignissim id placerat at,
+                        rhoncus vel arcu. Nullam ipsum neque, consequat non commodo vitae, venenatis ac
+                        ante. Vestibulum at tincidunt augue. Fusce pellentesque consectetur dapibus. Pellentesque
+                        aliquet vehicula aliquet. Cras dictum feugiat cursus. Nulla convallis gravida ipsum
+                        et commodo. Morbi tincidunt aliquet convallis. Vestibulum fermentum interdum neque
+                        fringilla dignissim. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div id="tab-3">
+                    <p>
+                        In pellentesque elementum arcu, eu viverra est sollicitudin quis. Cras dolor turpis,
+                        interdum ut vulputate et, euismod a sapien. Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Nunc suscipit pellentesque lacus
+                        nec malesuada. Proin commodo lectus tincidunt quam adipiscing consequat euismod
+                        vel massa. Aenean sed dui eget felis lacinia ornare non in quam. Vivamus condimentum
+                        condimentum mauris, ut fermentum elit lacinia at.
+                    </p>
+                </div>
+                <div id="tab-4">
+                    <p>
+                        Nullam id risus tellus, non imperdiet eros. Integer dolor ante, facilisis ac posuere
+                        ac, auctor at leo. Aenean aliquet sem in purus placerat aliquam. Suspendisse vitae
+                        ligula et ante cursus aliquet sit amet vitae lacus. Vivamus tristique lacinia ornare.
+                        Nunc scelerisque varius justo, vel euismod felis volutpat placerat. Fusce feugiat
+                        ipsum sed lorem rhoncus venenatis. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Curabitur et ornare mi. Suspendisse odio
+                        ante, sollicitudin in porta fermentum, bibendum et nulla. Etiam vitae quam nec magna
+                        molestie iaculis. Etiam sed est lacus, vel interdum est. Pellentesque vel sem orci.
+                        Vestibulum nec ante a lacus interdum scelerisque non id nunc. Aenean molestie semper
+                        varius.
+                    </p>
+                </div>
+                <div id="tab-5">
+                    <p>
+                        Morbi ligula augue, ultricies eu vulputate cursus, elementum ornare mauris. Nulla
+                        dui sem, condimentum sed luctus vitae, porta et ligula. Fusce bibendum, massa ac
+                        aliquam tincidunt, arcu neque lacinia nisi, at porttitor dui mi sed tortor. Ut lorem
+                        neque, molestie id eleifend ut, iaculis et ipsum. Curabitur ultricies facilisis
+                        nisl, luctus vulputate nisl lobortis vitae. Integer mi odio, mollis ut iaculis bibendum,
+                        cursus at velit. Sed vestibulum, dolor sed posuere tempor, lectus ipsum tincidunt
+                        dui, sit amet laoreet sapien ligula quis erat. Phasellus sodales sapien sit amet
+                        velit vehicula tristique. Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Pellentesque nisl sem, porta sed fringilla eget,
+                        mollis quis nunc. Etiam faucibus tempus pharetra.
+                    </p>
+                </div>
+                <div id="tab-6">
+                    <p>
+                        Aliquam lobortis congue hendrerit. Vivamus diam nibh, imperdiet sed tempus eu, feugiat
+                        a urna. Suspendisse ut odio at sem auctor suscipit. Morbi eget velit nisl, cursus
+                        viverra mi. In et nisi eu magna consectetur placerat non in lorem. Ut sollicitudin
+                        dui quis nibh congue nec aliquam magna suscipit. Curabitur tellus augue, commodo
+                        non scelerisque nec, placerat vel ligula. Praesent bibendum purus quis magna vestibulum
+                        venenatis tincidunt velit gravida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+​
