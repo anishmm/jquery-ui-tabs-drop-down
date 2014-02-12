@@ -1,22 +1,15 @@
 ﻿/*
- * tabDropdown version 1.0
+ * tabDropdown version 1.0.1
  * Author: Anish MM - anishmm@gmail.com
  * (c) 2012, Anish MM
- * Dependencies: jQuery v1.6+, jQuery UI 1.8+
- * 
- * Description:
- * tabDropdown extends jQuery UI tabs to include a dropdown for when tabs break to the maxTab count
+ * Supported : jQuery v1.6+, jQuery UI 1.8+
  *
- * Usage:
- * 
  * Simple:
  * 		$("#mytab").tabDropdown();
- *
- * 	Options:
- *  		$("#mytab").tabDropdown({
- *  			className: "tabDropdown",       // classname for css
+ * 		$("#mytab").tabDropdown({
+ *  			className: "tabDropdown",       // css name
  *  			Active: true,                   // Active dropdown features
- *  			dropDownText: "More",               // set drop down text
+ *  			dropDownText: "More",           // set drop down text
  *  			showCount: false,               // show drop down count
  *  			dropIcon: "&#9660; ",           // icon/caret - if using image, specify image width
  *  			dropWidth: "30%",               // width of dropdown
@@ -99,7 +92,7 @@
         }
     }
     $.fn.tabDropdown.defaults = {
-        className: "tabDropdown",
+        className: "my-class",
         Active: true,
         dropDownText: "More",
         showCount: false,
