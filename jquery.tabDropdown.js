@@ -7,7 +7,7 @@
  * Simple:
  * 		$("#mytab").tabDropdown();
  * 		$("#mytab").tabDropdown({
- *  			className: "tabDropdown",       // css name
+ *  			tabcss: "tabDropdown",          // css name
  *  			Active: true,                   // Active dropdown features
  *  			dropDownText: "More",           // set drop down text
  *  			showCount: false,               // show drop down count
@@ -25,10 +25,10 @@
             return this.each(function () {
                 var o = op,
                     $mt = $(this);
-                (o.className != '') && $mt;
+                (o.tabcss != '') && $mt;
                 $mt.tabs();
                 if (o.Active) {
-                    var at = $('<div />').addClass(o.className).appendTo($mt);
+                    var at = $('<div />').addClass(o.tabcss).appendTo($mt);
                     var ut = $mt.find('.ui-tabs-nav');
                     var ts = ut.find("li");
                     var xt = (ts.length - o.maxTab);
@@ -88,11 +88,11 @@
         } else if (typeof method === 'object' || !method) {
             return methods.init.apply(this, arguments);
         } else {
-            $.error('Method ' + method + ' does not exist on $.tabDropdown');
+            $.error('Method ' + method);
         }
     }
     $.fn.tabDropdown.defaults = {
-        className: "my-class",
+        tabcss: "my-class",
         Active: true,
         dropDownText: "More",
         showCount: false,
